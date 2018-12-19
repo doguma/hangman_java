@@ -12,17 +12,13 @@ public class FilePractice {
 //        String [] movieNames = hello.returnMovieList();
 
         String answer = hello.pickOne();
-//        System.out.println(answer);
+
+//      System.out.println(answer);
         // this is the answer!
 
         StringBuilder answer_copy = new StringBuilder(answer.replaceAll("[a-zA-Z]", "_"));
         String answer2 = answer;
 
-
-
-//        for (String el : movieNames) {
-//            System.out.println(el);
-//        }
 
         int wrongWord = 0;
         String wrongWords = new String();
@@ -36,14 +32,13 @@ public class FilePractice {
             } else if(wrongWord>9) {
 
                 System.out.println("You have lost 10 points...");
-                System.out.println("The answer was " + answer + " . bye~");
+                System.out.println("The answer was... " + answer + "!!!");
                 break;
 
             } else{
-                    System.out.println("You are guessing:");
-                    System.out.println(answer_copy);
+                    System.out.println("You are guessing: " + answer_copy);
 
-                    System.out.println("You have guessed (" + wrongWord + ") wrong letters:" + wrongWords);
+                    System.out.println("You have lost (" + wrongWord + ") points:" + wrongWords);
 
 
 
